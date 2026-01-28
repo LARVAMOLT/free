@@ -1,0 +1,24 @@
+#quotebox {
+  box-sizing: border-box; /* dont delete this holy prayer of a line */
+  background-color: black; /* box color */
+  font-size: 1em;
+  color: inherit; /* quote text will be the same color as other text on your page, change this to a hex code if you want*/
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px; /* remove this line for square corners */
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+}
+
+.quote {
+  text-align: center;
+}
+
+.refresh {
+  float: left;
+}
+
+.source {
+  float: right;
+}
