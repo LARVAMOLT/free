@@ -37,12 +37,12 @@ body {
   }
   
 @font-face {
-  font-family: "Heffaklump";
+  font-family: "Heffaklump"; /* neopets logo font */
   src: url("/fonts/heffaklump.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Cafeteria"; /* yeah i paid for this font eat my ass*/
+  font-family: "Cafeteria"; /* navigation links font */
   src: url("/fonts/cafeteria.ttf") format("truetype");
 }
   
