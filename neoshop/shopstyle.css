@@ -259,14 +259,6 @@ form {
 		padding-right: 4px;
 	}
 
-zombie, #copyright {
-  font-family: 'Zombie Holocaust', serif;
-}
-
-retro {
-  font-family: 'Retro Computer', serif;
-}
-
 .cloud {
   font-size: 8pt;
   text-decoration: none;
@@ -281,31 +273,6 @@ retro {
 .cloud a:hover {
   color: #a100ff;
   text-decoration: none;
-}
-
-#shopquotebox {
-  box-sizing: border-box;
-  background-color: black;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  border-color: purple;
-  border-width: 10px;
-  padding: 5px 10px 5px 10px;
-  overflow: hidden;
-}
-
-.shopquote {
-  text-align: center;
-}
-
-.shoprefresh {
-  float: left;
-}
-
-.shopsource {
-  float: right;
 }
 
 
