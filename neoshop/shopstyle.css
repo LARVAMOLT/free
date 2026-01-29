@@ -1,0 +1,334 @@
+/*
+  _      _   _____   ___   __  __  ___  _  _____ 
+ | |    /_\ | _ \ \ / /_\ |  \/  |/ _ \| ||_   _|
+ | |__ / _ \|   /\ V / _ \| |\/| | (_) | |__| |  
+ |____/_/ \_\_|_\ \_/_/ \_\_|  |_|\___/|____|_|  
+                                                 
+thanks for checking out my source code :)
+i hope you find what you're looking for.
+
+CSS adapted by LARVAMOLT from Neopets.com
+
+Portions of the original CSS
+were written by Max van Doorn
+while he worked for Neopets.
+
+*/
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cfcfcf;
+  z-index: -1;
+}
+
+body {
+  background-color: #cfcfcf;
+  background-attachment: fixed;
+  color: #000;
+  font-family: sans-serif;
+  margin: 0px;
+	padding: 0px;
+	text-align: center;
+  }
+  
+@font-face {
+  font-family: "Heffaklump";
+  src: url("https://larvamolt.neocities.org/fonts/heffaklump.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cafeteria"; /* yeah i paid for this font eat my ass*/
+  src: url("https://larvamolt.neocities.org/fonts/cafeteria.ttf") format("truetype");
+}
+
+  
+@font-face {
+  font-family: "Zombie Holocaust";
+  src: url("https://larvamolt.neocities.org/fonts/zombie.ttf") format("truetype");
+}  
+  
+@font-face {
+  font-family: "Retro Computer";
+  src: url("https://larvamolt.neocities.org/fonts/retro_computer.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "04B_03";
+  src: url("https://larvamolt.neocities.org/fonts/04B_03.ttf") format("truetype");
+}  
+  
+a {
+  text-decoration: none;
+  color: #2e72c0;
+}
+
+a:hover {
+  color: #a100ff;
+}
+
+td, select, input {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+	}
+	
+#main {
+		background-color: #FFFFFF;
+		width: 996px;
+		/*height: 100%;*/
+		text-align: left;
+		vertical-align: top;
+	}
+
+#main.premium_bar_spacer {
+		margin-bottom: 20px;
+	}
+
+/* Totally for the header bar at the top */
+.header {
+  width: 996px;
+  height: 77px;
+  background-image: url("/img/neoheader.png");
+  background-position: center;
+  margin: auto;
+  border-style: solid;
+	border-width: 0 2px;
+	border-color: #747474;
+}
+
+#heffaklump {
+  float: left;
+  color: #000;
+  font-family: "Heffaklump", sans-serif;
+  text-align: left;
+  margin-left: 25px;
+  font-size: 20pt;
+  text-shadow: -1px -1px 10px #fff, 1px -1px 10px #fff, -1px 1px 10px #fff, 1px 1px 10px #fff;
+}
+
+#headerlinks {
+  width: 700px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 100px 0 0;
+  font-family: "Cafeteria", sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 13pt;
+  letter-spacing: 0.06rem;
+}
+
+#headerlinks a, #headerlinks a:hover, #headerlinks a:visited {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 13pt;
+  letter-spacing: 0.06rem;
+  text-decoration: none;
+}
+
+/* Your mom... I mean, page content <-- the original comment on the actual Neopets CSS */
+#content {
+		width: 996px;
+		background-color: white;
+		vertical-align: top;
+		clear: left;
+		margin: auto;
+		border-style: solid;
+		border-width: 0 2px;
+		border-color: #747474;
+}
+
+/* Footer, now with 33% more feet */
+#footer {
+	  margin: auto;
+		width: 996px;
+		height: 150px;
+		position: relative;
+		background-image: url(/img/neofooter.png);
+		display: flex;
+		flex-direction: column; 
+    justify-content: flex-end;
+    border-style: solid;
+		border-width: 0 2px;
+		border-color: #747474;
+	}
+	
+#footercontent {
+	  text-align: left;
+	  bottom: 0;
+	  padding-left: 20px;
+	  padding-bottom: 20px;
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		color: #fff;
+	}
+
+form {
+		margin: 0px;
+		padding: 0px;
+	}
+
+/* Sidebar with the Neopet, etc. */
+	.sidebar {
+		background-color: #EFEFEF;
+
+		height: auto;
+
+		text-align: center;
+		vertical-align: top;
+
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+
+/* We need a few styles to make a side module work */
+	.sidebarModule {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: solid;
+		border-color: #c9c9c9;
+		border-width: 2px;
+		font-size: 9pt;
+	}
+
+/* Styles for our nice header */
+	.sidebarHeader {
+		height: 22px;
+		background-color: #64604d;
+		color: #fff;
+		font-size: 8pt;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 3px;
+	}
+
+	.sidebarHeader A:Link, .sidebarHeader A:Hover, .sidebarHeader A:Visited {
+		text-decoration: none;
+		color: #f9f1bc; /* pale yellow */
+	}
+
+/* Neopet module */
+.activePet {
+		background-color: #FFFFFF;
+		border-bottom: 2px solid #C9C9C9;
+		font-size: 7pt;
+    text-decoration: none;
+   color: #2e72c0; /* soft dark blue */
+	}
+
+.activePet a, .activePet a:visited {
+  font-size: 7pt;
+  color: #2e72c0;
+  text-decoration: none;
+}
+
+.activePet a:hover {
+  font-size: 7pt;
+  color: #a100ff; /* purple */
+  text-decoration: none;
+}
+
+	.neopetPhrase {
+		border-bottom: 2px solid #C9C9C9;
+	}
+
+	.activePetInfo, .activePetInfo TD {
+		background-color: #FFFFFF;
+		color: #000000;
+		font-size: 7pt;
+	}
+
+/* Neofriends Module */
+	.neofriend, .neofriendSearch INPUT {
+		font-size: 7pt;
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+
+	.neofriendUsername {
+		background-color: #ECECEC;
+
+		font-size: 7pt;
+		text-align: right;
+
+		height: 14px;
+	}
+
+	.neofriendUsername A:Link, .neofriendUsername A:Hover, .neofriendUsername A:Visited {
+		color: #000000;
+	}
+
+	.neofriendInfo {
+		width: 100%;
+		font-size: 7pt;
+		text-align: left;
+		color: #000000;
+	}
+
+	.neofriendAvatar {
+		padding-right: 4px;
+	}
+
+zombie, #copyright {
+  font-family: 'Zombie Holocaust', serif;
+}
+
+retro {
+  font-family: 'Retro Computer', serif;
+}
+
+.cloud {
+  font-size: 8pt;
+  text-decoration: none;
+  color: #2e72c0;
+}
+
+.cloud a, a:visited {
+  color: #2e72c0;
+  text-decoration: none;
+}
+
+.cloud a:hover {
+  color: #a100ff;
+  text-decoration: none;
+}
+
+#shopquotebox {
+  box-sizing: border-box;
+  background-color: black;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-color: purple;
+  border-width: 10px;
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+}
+
+.shopquote {
+  text-align: center;
+}
+
+.shoprefresh {
+  float: left;
+}
+
+.shopsource {
+  float: right;
+}
+
+
+@media (min-width: 601px) { /* DESKTOP VIEW - i would only use this to hide mobile-only things on desktop*/
+
+}
+
+@media (max-width: 600px) { /* MOBILE VIEW - for smaller viewports*/
+
+}
